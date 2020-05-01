@@ -4,3 +4,11 @@
     align-items: center;
     flex-direction: column;
 }
+
+//Parametric Mixin
+.contactBtn(@background, @color, @padding){
+    border-radius: 5px;
+    background-color: @background;
+    padding: @padding;
+    border: 1px solid @navColor;
+}
