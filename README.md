@@ -25,10 +25,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing is a way to add new functionality and syntax to CSS. It gives you useful tools like variables, functions, and mixins to make
+your CSS more dynamic, structured, and reusable. It is not a replacement for CSS. It cannot be used by the browser so it has to be compiled
+into CSS by a compiler
+
 2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is Mixins. They give you so much power to make your CSS much cleaner and resuable. Having mixins
+for common styles makes your code much less redundant, and adding parameters makes it both customizable and more DRY. Deciding what needs
+to be put in a mixin gives me the most trouble. Some things are used often, but not often enough to justify using a mixin and its hard to 
+distinguish that.
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+A variable is a way to have the computer store a piece of data for you to use later. For example if you wanted to use a users name a lot
+in a program, instead of repeatedly typing their name, you could put it in a variable then use the variable in place of it. And, if you 
+wanted to change that name later, all you would have to do was change what the variable was equal to. Not go through the code
+replacing every instance of that name.
+
 4. What is the purpose of using functions in code?
+
+Functions make code more resuable and customizable. If there is a task you do a lot, for example printing a greeting followed by a users
+name, instead of doing that everytime, you could put it in a function and just pass it the users name.
+
 5. What is a JSON data?
+
+JSON is a format for storing data based off of JavaScript Arrays and objects. It is usually a single root array that contain many objects
+that contain key/value pairs.
 
 You may need to look up an answer but, you are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
