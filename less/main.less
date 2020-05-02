@@ -1,7 +1,15 @@
 body {
-    padding: 10vh 20vh;
+    padding: 10vh;
     max-width: 1000px;
     margin: 0 auto;
+
+    @media @tablet {
+        padding: 10vh 5vh;
+    }
+
+    @media @mobile {
+        padding: 10vh 20px;
+    }
 }
 
 .title-container {
@@ -15,11 +23,21 @@ body {
     .flexboxCenter();
     height: 70vh;
 
+    @media @mobile {
+        height: 60vh;
+        width: 100%;
+    }
+
     h1 {
         font-size: 6rem;
         font-weight: bold;
         text-align: center;
         margin-bottom: 2vh;
+
+        @media @mobile {
+            font-size: 4rem;
+        }
+
     }
 
     button {
@@ -32,14 +50,36 @@ body {
     justify-content: space-evenly;
     margin-top: 5vh;
 
+    @media @tablet {
+        flex-direction: column;
+        .flexboxCenter();
+    }
+
     .artist {
         width: 45%;
         text-align: center;
+
+        @media @tablet {
+            width: 80%;
+            margin-bottom: 5vh;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        @media @mobile {
+            width: 100%;
+        }
 
         img {
             width: 80%;
             height: 300px;
             border-radius: 5px;
+
+            @media @mobile {
+                width: 100%;
+            }
         }
 
         a {
